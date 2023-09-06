@@ -112,6 +112,16 @@ payload: {
     "value"     :   "REACH"
 }
 
+## FUNCTIONCOMPLETED
+topic:v1cdti/hw/set/ุ6310301021/model-01/sn-01
+payload: {
+    "action"    :   "set",
+    "project"   :   "6310301021",
+    "model"     :   "model-01",
+    "serial"    :   "sn-01",
+    "name"      :   "FUNCTIONCOMPLETED",
+    "value"     :   "WASH"/"RINSE"/"SPIN"
+}
 
 # FAULT state
 
