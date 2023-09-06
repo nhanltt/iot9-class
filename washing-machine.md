@@ -74,7 +74,7 @@ payload: {
     "model"     :   "model-01",
     "serial"    :   "sn-01",
     "name"      :   "STATUS",
-    "value"     :   "SPINING"
+    "value"     :   "SPINNING"
 }
 
 # Operation state
@@ -122,30 +122,30 @@ payload: {
     "project"   :   "6310301021",
     "model"     :   "model-01",
     "serial"    :   "sn-01",
-    "name"      :   "STATUS",
-    "value"     :   "FILLWATER"/"HEATWATER"
+    "name"      :   "FAULT",
+    "value"     :   "FILLWATER_TIMEOUT"/"HEATWATER_TIMEOUT"
 }
 
 ## OUTOFBALANCE
-topic:v1cdti/hw/get/ุ6310301021/model-01/sn-01
+topic:v1cdti/hw/set/ุ6310301021/model-01/sn-01
 payload: {
-    "action"    :   "get",
+    "action"    :   "set",
     "project"   :   "6310301021",
     "model"     :   "model-01",
     "serial"    :   "sn-01",
-    "name"      :   "STATUS",
-    "value"     :   "BALANCE"/"IMBALANCE"
+    "name"      :   "FAULT",
+    "value"     :   "OUTOFBALANCE"
 }
 
 ## MOTORFAILURE
-topic:v1cdti/hw/get/ุ6310301021/model-01/sn-01
+topic:v1cdti/hw/set/ุ6310301021/model-01/sn-01
 payload: {
-    "action"    :   "get",
+    "action"    :   "set",
     "project"   :   "6310301021",
     "model"     :   "model-01",
     "serial"    :   "sn-01",
-    "name"      :   "STATUS",
-    "value"     :   "NORMAL"/"FAILED"
+    "name"      :   "FAULT",
+    "value"     :   "MOTORFAILED_SPIN"/"MOTOTRFAILED_RINSE"
 }
 
 ## FAULTCLEARED
@@ -155,6 +155,6 @@ payload: {
     "project"   :   "6310301021",
     "model"     :   "model-01",
     "serial"    :   "sn-01",
-    "name"      :   "STATUS",
-    "value"     :   "CLEARED"/"NOTCLEARED"
+    "name"      :   "FAULT",
+    "value"     :   "CLEARED"
 }
